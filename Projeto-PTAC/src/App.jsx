@@ -3,6 +3,8 @@ import { useState } from 'react'
 import './App.css'
 import Perfil from './components/Perfil'
 import AtualizarPerfil from './components/AtualizarPerfil'
+import ResMesa from './components/ReservarMesas.jsx'
+import CadMesa from './components/CadastrarMesa.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Perfil />} />
         <Route path="/atualizar-perfil" element={<AtualizarPerfil />} />
+        <Route path="/cadastrarMesa" element={<CadMesa />} />
+        <Route path="/reservarMesa" element={<ResMesa />} />
       </Routes>
     </BrowserRouter>
   );
