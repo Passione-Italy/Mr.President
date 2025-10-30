@@ -4,7 +4,7 @@ import "../CSS/CadastrarMesa.css";
 export default function CadastrarMesa() {
   const [capacidade, setCapacidade] = useState(0);
   const [codigoMesa, setCodigoMesa] = useState("");
-  const [reservada, setReservada] = useState(null); // true / false
+  const [reservada, setReservada] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export default function CadastrarMesa() {
       return;
     }
 
-    console.log("📋 Dados da Mesa:");
+    console.log("Dados da Mesa:");
     console.log("Capacidade:", capacidade);
     console.log("Código:", codigoMesa);
     console.log("Reservada:", reservada ? "Sim" : "Não");
