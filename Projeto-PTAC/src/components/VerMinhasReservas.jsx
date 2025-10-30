@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../App.css'
+import '../CSS/verReserva.css'
 export default function ConsultarReservas() {
     const [numeroMesa, setNumeroMesa] = useState(0);
     const [statusMesa, setStatusMesa] = useState(false);

@@ -10,8 +10,10 @@ export default function Perfil() {
              <p>Nome:</p>
              <p>Tipo:</p>
              <p>Id:</p>
-             <button onClick={() => navigate("/atualizar-perfil")}>Atualizar Perfil</button>
+             <button onClick={() => navigate("/atualizarPerfil")}>Atualizar Perfil</button>
           </div>
         </main>
     )
    }
+
+   <Route path="/" element={<Perfil />} />
