@@ -12,13 +12,13 @@ export default function Perfil() {
             <div className='login-card'>
 
                 <form onSubmit={proxPag}>
-                    <label>Insira seu E-mail</label>
+                    <label>Insira seu novo E-mail</label>
                     <input type="text" />
 
-                    <label>Insira sua senha</label>
+                    <label>Insira sua nova senha</label>
                     <input type="password" />
 
-                    <button type='submit'>Logar</button>
+                    <button type='submit'>atualizar perfil</button>
                 </form>
 
             </div>
