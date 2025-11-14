@@ -2,14 +2,18 @@
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(135deg, #6C63FF, #4E54C8);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-
+body{
+      background: url('../../public/vecteezy_pizza-web-banner-with-copy-space_26466926.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .login-card {
   background: #ffffff;
   padding: 35px 40px;
