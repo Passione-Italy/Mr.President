@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react'
+import Login from './components/Login.jsx'
 import Perfil from './components/Perfil'
 import ResMesa from './components/ReservarMesas.jsx'
 import CadMesa from './components/CadastrarMesa.jsx'
@@ -12,7 +13,8 @@ function App() {
   return (
   <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Perfil />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/pefil" element={<Perfil />} />
         <Route path="/atualizarPerfil" element={<AtualizarPerfil />} />
         <Route path="/cadastrarMesa" element={<CadMesa />} />
         <Route path="/reservarMesa" element={<ResMesa />} />
