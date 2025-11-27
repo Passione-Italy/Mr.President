@@ -8,14 +8,17 @@ import VerMinhasReservas from './components/VerMinhasReservas.jsx'
 import AtualizarPerfil from "./components/AtualizarPerfil.jsx"; 
 import Cardapio from "./components/Cardapio.jsx";
 import Cadastrar from "./components/Cadastro.jsx";
+import Home from "./components/Home.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <>
   <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/atualizarPerfil" element={<AtualizarPerfil />} />
         <Route path="/cadastrarMesa" element={<CadMesa />} />
@@ -25,6 +28,7 @@ function App() {
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
+    </> 
   );
 }
 
