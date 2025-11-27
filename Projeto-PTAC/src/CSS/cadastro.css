@@ -1,0 +1,90 @@
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+body{
+      background: url('../../public/vecteezy_pizza-web-banner-with-copy-space_26466926.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cadastro-card {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 380px;
+  animation: fadeIn 0.6s ease;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+form label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+
+form input {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+form input:focus {
+  border-color: #6C63FF;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #6C63FF;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: #574feb;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 420px) {
+  .login-card {
+    padding: 25px 28px;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+}

@@ -6,6 +6,8 @@ import ResMesa from './components/ReservarMesas.jsx'
 import CadMesa from './components/CadastrarMesa.jsx'
 import VerMinhasReservas from './components/VerMinhasReservas.jsx'
 import AtualizarPerfil from "./components/AtualizarPerfil.jsx"; 
+import Cardapio from "./components/Cardapio.jsx";
+import Cadastrar from "./components/Cadastro.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +21,8 @@ function App() {
         <Route path="/cadastrarMesa" element={<CadMesa />} />
         <Route path="/reservarMesa" element={<ResMesa />} />
         <Route path="/verMinhasReservas" element={<VerMinhasReservas />} />
+        <Route path="/cardapio" element={<Cardapio />} />
+        <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
     </BrowserRouter>
   );

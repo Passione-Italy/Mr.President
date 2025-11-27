@@ -13,7 +13,7 @@ export default function Login() {
     return (
         <div className="container">
             <div className='login-card'>
-
+                <h2>Login</h2>
                 <form onSubmit={proxPag}>
                     <label>Insira seu E-mail</label>
                     <input type="text" />
